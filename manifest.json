@@ -1,0 +1,23 @@
+{
+    "name": "ReadNews",
+    "version": "1.1",
+    "description": "This is software read newspaper",
+    "manifest_version": 3,
+    "permissions": ["storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Click Me",
+      "default_popup": "/popup/popup.html"
+    },
+    "host_permissions": [
+      "https://shopee.vn/"
+    ],
+    "optional_host_permissions": [
+      "*://*/*"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' ;"
+  }
+  }
